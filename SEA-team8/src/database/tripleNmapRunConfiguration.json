@@ -1,0 +1,7 @@
+{
+  "run_name":"Triple Nmap from JSON file",
+  "run_description":"This triple Nmap Run Configuration was read from a JSON file.",
+  "whitelist":"127.0.10.2",
+  "blacklist":"268.1.73.55",
+  "scan_type":"nmap, nmap, namp"
+}

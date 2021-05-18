@@ -1,0 +1,42 @@
+<XML_REPORT><Name>testing</Name><Description>testing top dropdown</Description><nmaprun scanner="nmap" args="nmap -T4 -A -p 1-1000 -oX - 45.33.32.156 127.0.0.1" start="1620177992" startstr="Tue May  4 19:26:32 2021" version="7.91" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1000" services="1-1000" />
+<verbose level="0" />
+<debugging level="0" />
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0" />
+<address addr="127.0.0.1" addrtype="ipv4" />
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0" />
+<address addr="45.33.32.156" addrtype="ipv4" />
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1620177992" endtime="1620178043"><status state="up" reason="syn-ack" reason_ttl="0" />
+<address addr="45.33.32.156" addrtype="ipv4" />
+<hostnames>
+<hostname name="scanme.nmap.org" type="PTR" />
+</hostnames>
+<ports><extraports state="filtered" count="998">
+<extrareasons reason="no-responses" count="998" />
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0" /><service name="tcpwrapped" method="probed" conf="8" /><script id="ssh-hostkey" output="ERROR: Script execution failed (use -d to debug)" /></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0" /><service name="tcpwrapped" method="probed" conf="8" /><script id="http-server-header" output="Apache/2.4.7 (Ubuntu)"><elem>Apache/2.4.7 (Ubuntu)</elem>
+</script></port>
+</ports>
+<times srtt="60165" rttvar="27638" to="170717" />
+</host>
+<host starttime="1620177992" endtime="1620178043"><status state="up" reason="conn-refused" reason_ttl="0" />
+<address addr="127.0.0.1" addrtype="ipv4" />
+<hostnames>
+<hostname name="localhost" type="PTR" />
+</hostnames>
+<ports><extraports state="closed" count="1000">
+<extrareasons reason="conn-refused" count="1000" />
+</extraports>
+</ports>
+<times srtt="69" rttvar="41" to="100000" />
+</host>
+<runstats><finished time="1620178043" timestr="Tue May  4 19:27:23 2021" summary="Nmap done at Tue May  4 19:27:23 2021; 2 IP addresses (2 hosts up) scanned in 50.65 seconds" elapsed="50.65" exit="success" /><hosts up="2" down="0" total="2" />
+</runstats>
+</nmaprun></XML_REPORT>
